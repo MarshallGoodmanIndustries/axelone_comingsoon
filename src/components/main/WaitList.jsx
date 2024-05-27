@@ -12,10 +12,10 @@ function WaitList() {
         </div>
         <form method="post" className="w-full sm:max-w-[30rem] flex flex-col items-center  gap-4">
           <h3 className="text-black font-poppins text-lg font-medium capitalize self-start sm:self-center md:self-start">Get Started for free</h3>
-          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="fullName" placeholder="Full name" required />
-          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="email" name="email" placeholder="Email address" required />
-          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="tel" name="phone" placeholder="Phone number" required />
-          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="city" placeholder="City" required />
+          <input className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="fullName" placeholder="Full name" required />
+          <input className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="email" name="email" placeholder="Email address" required />
+          <input className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="tel" name="phone" placeholder="Phone number" required />
+          <input className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="city" placeholder="City" required />
           <button type="submit" name="newsletter_btn" className="w-full bg-accent hover:bg-accentDark transition-all duration-300 text-primary font-poppins font-medium text-base sm:text-lg md:text-xl rounded-lg py-3 px-4">Join</button>
         </form>
     </section>
