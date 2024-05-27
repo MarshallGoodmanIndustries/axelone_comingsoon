@@ -11,7 +11,7 @@ function Navbar() {
         <div className='max-w-32 h-auto transform -translate-x-3'>
             <img src={logo} className='w-full h-full object-cover' alt="company logo" />
         </div>
-        <button onClick={scrollDown} className="bg-accent hover:bg-accentDark transition-all duration-300 text-primary font-poppins text-base sm:text-lg md:text-xl rounded-lg py-2 px-4">Join waitlist</button>
+        <button onClick={scrollDown} className="bg-accent text-primary font-poppins text-base sm:text-lg md:text-xl rounded-lg py-2 px-4 capitalize">Join waitlist</button>
     </nav>
   )
 }

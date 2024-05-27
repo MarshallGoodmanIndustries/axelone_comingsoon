@@ -5,12 +5,12 @@ function About() {
   const socialMediaHandles = [
     {
         url: 'https://Facebook.com/fyndah',
-        icon: <FaFacebook className='w-4 h-4 text-white' />,
+        icon: <FaFacebook className='w-5 h-5 text-white' />,
         bg: "#3b5998"
     },
     {
         url: 'https://Instagram.com/Fyndah',
-        icon: <FaInstagram className='w-4 h-4 text-white' />,
+        icon: <FaInstagram className='w-5 h-5 text-white' />,
         bg: "#E1306C"
     },
     // {
