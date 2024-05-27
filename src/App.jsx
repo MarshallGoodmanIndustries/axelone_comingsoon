@@ -1,4 +1,6 @@
-import Landing from "./components/Landing"
+import Landing from "./components/Landing";
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 
 function App() {
@@ -6,6 +8,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <Landing />
     </>
   )
