@@ -1,28 +1,28 @@
-import { FaInstagram, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa6";
-
+import { FaInstagram, FaFacebook } from "react-icons/fa6";
+// , FaTwitter, FaWhatsapp
 
 function About() {
   const socialMediaHandles = [
     {
-        url: 'https://web.facebook.com/',
+        url: 'https://Facebook.com/fyndah',
         icon: <FaFacebook className='w-4 h-4 text-white' />,
         bg: "#3b5998"
     },
     {
-        url: 'https://web.facebook.com/',
+        url: 'https://Instagram.com/Fyndah',
         icon: <FaInstagram className='w-4 h-4 text-white' />,
         bg: "#E1306C"
     },
-    {
-        url: 'https://web.facebook.com/',
-        icon: <FaTwitter className='w-4 h-4 text-white' />,
-        bg: "#1da1f2"
-    },
-    {
-        url: 'https://web.facebook.com/',
-        icon: <FaWhatsapp className='w-4 h-4 text-white' />,
-        bg: "#25D366"
-    },
+    // {
+    //     url: 'https://web.facebook.com/',
+    //     icon: <FaTwitter className='w-4 h-4 text-white' />,
+    //     bg: "#1da1f2"
+    // },
+    // {
+    //     url: 'https://web.facebook.com/',
+    //     icon: <FaWhatsapp className='w-4 h-4 text-white' />,
+    //     bg: "#25D366"
+    // },
 ];
   return (
     <section id="about" className="bg-primary flex flex-col py-24 px-4 sm:px-5 md:px-6 lg:px-16">
@@ -43,7 +43,7 @@ function About() {
           <div className="flex items-center gap-4">
             {socialMediaHandles.map(({url,icon,bg}, index)=>(
               <div key={index} style={{background:bg}} className="p-1 rounded-full">
-                <a href={url}>{icon}</a>
+                <a href={url} target="_blank">{icon}</a>
               </div>
             ))}
            
