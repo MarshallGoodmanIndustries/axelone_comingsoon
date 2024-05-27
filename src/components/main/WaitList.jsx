@@ -16,7 +16,7 @@ function WaitList() {
           <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="email" name="email" placeholder="Email address" required />
           <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="tel" name="phone" placeholder="Phone number" required />
           <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="city" placeholder="City" required />
-          <button type="submit" name="newsletter_btn" className="w-full bg-accent hover:bg-accentDark transition-all duration-300 text-primary font-poppins text-base sm:text-lg md:text-xl rounded-lg py-3 px-4">Join</button>
+          <button type="submit" name="newsletter_btn" className="w-full bg-accent hover:bg-accentDark transition-all duration-300 text-primary font-poppins font-medium text-base sm:text-lg md:text-xl rounded-lg py-3 px-4">Join</button>
         </form>
     </section>
   )
