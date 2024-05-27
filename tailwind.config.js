@@ -13,7 +13,8 @@ export default {
       colors: {
         primary: '#ffffff',
         secondary: '#edf2fb',
-        accent: '#ed8936'
+        accent: '#ed8936',
+        accentDark: '#ed7a36',
       },
     },
   },

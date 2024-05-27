@@ -11,7 +11,7 @@ function Hero() {
         <h1 className="text-black font-poppins text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-semibold  uppercase">Coming soon</h1>
         <h4 className="text-black font-poppins text-lg md:text-xl text-center">The new way to discover local businesses</h4>
         <hr className="w-16 md:w-24 h-[2px] bg-accent rounded-lg" />
-        <button onClick={scrollDown} className="bg-accent text-primary font-poppins text-lg md:text-xl rounded-lg py-2 px-6 mt-8">Learn More</button>
+        <button onClick={scrollDown} className="bg-accent hover:bg-accentDark transition-all duration-300 text-primary font-poppins text-lg md:text-xl rounded-lg py-2 px-6 mt-8">Learn More</button>
     </section>
   )
 }

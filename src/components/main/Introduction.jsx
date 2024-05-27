@@ -12,8 +12,8 @@ function Introduction() {
                 with everything you need to grow and manage your business effectively.
             </p>
         </div>
-        <div className="rounded-lg">
-          <img src={man} className="w-full h-full object-cover rounded-lg" alt="man holding a laptop" />
+        <div className="rounded-lg overflow-hidden group">
+          <img src={man} className="w-full h-full object-cover rounded-lg transform scale-[1.03] group-hover:scale-100 transition-transform duration-300 " alt="man holding a laptop" />
         </div>
     </section>
   )
