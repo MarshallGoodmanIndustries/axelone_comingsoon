@@ -1,17 +1,22 @@
-
+import wailist_img from '../../assets/images/waitlist.png';
 
 function WaitList() {
   return (
-    <section className="bg-secondary flex flex-col items-center md:items-start gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
-        <div className="w-fit mx-auto flex flex-col gap-2">
-            <h2 className="text-black font-poppins text-2xl md:text-3xl text-center font-semibold uppercase">Join Our Wait list</h2>
-            <p className="text-black text-opacity-70 font-poppins text-base font-normal text-center md:max-w-[70%] md:mx-auto">Join now and receive 5 free leads during our first month of launching!</p>
+    <section id="waitlist" className="bg-secondary flex flex-col sm:items-center md:flex-row md:items-start md:justify-evenly gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
+        <div className="md:max-w-[30%] flex flex-col gap-2 ">
+          <h2 className="text-black font-poppins text-2xl md:text-3xl font-semibold uppercase">Exclusive early access offer</h2>
+          <p className="text-black text-opacity-70 font-roboto text-lg font-normal ">Join our waitlist now and receive 5 free leads</p>
+          <div className='w-full max-w-[14rem] mt-4 sm:self-center md:self-start'>
+            <img src={wailist_img} alt="waitlist illustration" className='w-full h-full object-cover' />
+          </div>
         </div>
-        <form method="post" className="w-full md:max-w-[60%] md:mx-auto">
-            <div className="w-full flex gap-2 items-center border-b border-black border-opacity-80 border-solid p-2">
-                <input type="email" className="w-full font-poppins flex-1 text-lg text-black bg-transparent outline-none p-2 placeholder:font-poppins placeholder:text-base placeholder:text-black placeholder:text-opacity-60" placeholder="Enter email address" name="email" required />
-                <button className="text-accent font-poppins text-lg font-semibold" type="submit">Join</button>
-            </div>
+        <form method="post" className="w-full sm:max-w-[30rem] flex flex-col items-center  gap-4">
+          <h3 className="text-black font-poppins text-lg font-medium capitalize self-start sm:self-center md:self-start">Get Started for free</h3>
+          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg p-2 w-full outline-none text-black text-opacity-80" type="text" name="fullName" placeholder="Full name" required />
+          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg p-2 w-full outline-none text-black text-opacity-80" type="email" name="email" placeholder="Email address" required />
+          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg p-2 w-full outline-none text-black text-opacity-80" type="tel" name="phone" placeholder="Phone number" required />
+          <input className="bg-primary border border-black border-opacity-70 border-solid rounded-lg p-2 w-full outline-none text-black text-opacity-80" type="text" name="city" placeholder="City" required />
+          <button type="submit" name="newsletter_btn" className="w-full bg-accent text-primary font-poppins text-base sm:text-lg md:text-xl rounded-lg py-2 px-4">Join</button>
         </form>
     </section>
   )
