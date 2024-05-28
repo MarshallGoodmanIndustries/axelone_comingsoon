@@ -28,7 +28,7 @@ function Countdown({deadline}) {
      },[deadline]);
     
       return (
-        <div className="opacity-10 overflow-x-clip absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-4 items-center justify-center w-full h-full">
+        <div className="opacity-[0.23] overflow-x-clip absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-4 items-center justify-center w-full h-full">
             <div className="flex flex-col gap-1">
             <h2 className="font-poppins text-center text-5xl sm:text-6xl md:text-8xl font-semibold text-black animate-pulse">{days}</h2>
             <p className="text-gray-800 font-poppins text-center text-2xl sm:text-4xl md:text-5xl font-semibold animate-pulse">Days</p>
