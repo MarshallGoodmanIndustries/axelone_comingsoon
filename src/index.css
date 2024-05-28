@@ -5,5 +5,5 @@
 
 
 .countBox{
-  margin-top: calc(16dvh + 5%);
+  margin-top: calc(16dvh + (84dvh / 20%));
 }
