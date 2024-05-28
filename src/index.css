@@ -4,10 +4,6 @@
 @tailwind utilities;
 
 
-/* header{
-  background-image: url("./assets/images/chairs2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  backdrop-filter: grayscale(100%);
-} */
+.countBox{
+  margin-top: calc(16dvh + 5%);
+}
