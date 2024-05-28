@@ -3,7 +3,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.countBox{
-  margin-top: calc(16dvh + 70%);
-}
