@@ -28,20 +28,20 @@ function Countdown({deadline}) {
      },[deadline]);
     
       return (
-        <div className="opacity-[0.23] overflow-x-clip absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-4 items-center justify-center w-full h-full">
-            <div className="flex flex-col gap-1">
+        <div className="opacity-[0.23] overflow-x-clip absolute top-0 left-0 border border-solid border-red-500  grid grid-cols-4 items-center justify-start w-full h-full">
+            <div className="flex flex-col gap-1 self-start">
             <h2 className="font-poppins text-center text-5xl sm:text-6xl md:text-8xl font-semibold text-black animate-pulse">{days}</h2>
             <p className="text-gray-800 font-poppins text-center text-2xl sm:text-4xl md:text-5xl font-semibold animate-pulse">Days</p>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 self-start">
             <h2 className="font-poppins text-center text-5xl sm:text-6xl md:text-8xl font-semibold text-black animate-pulse">{hours}</h2>
             <p className="text-gray-800 font-poppins text-center text-2xl sm:text-4xl md:text-5xl font-semibold animate-pulse">Hours</p>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 self-start">
             <h2 className="font-poppins text-center text-5xl sm:text-6xl md:text-8xl font-semibold text-black animate-pulse">{minutes}</h2>
             <p className="text-gray-800 font-poppins text-center text-2xl sm:text-4xl md:text-5xl font-semibold animate-pulse">Minutes</p>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 self-start">
             <h2 className="font-poppins text-center text-5xl sm:text-6xl md:text-8xl font-semibold text-black animate-pulse">{seconds}</h2>
             <p className="text-gray-800 font-poppins text-center text-2xl sm:text-4xl md:text-5xl font-semibold animate-pulse">Seconds</p>
             </div>
