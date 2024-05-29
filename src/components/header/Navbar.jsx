@@ -11,7 +11,7 @@ function Navbar() {
         <div className='max-w-[8rem] md:max-w-[10rem] h-auto  transform -translate-x-3 '>
             <img src={logo} className='w-full h-full object-cover' alt="company logo" />
         </div>
-        <button onClick={scrollDown} className="bg-accent text-primary font-poppins text-lg md:text-xl rounded-lg py-2 px-4 capitalize font-medium">Join waitlist</button>
+        <button onClick={scrollDown} className="bg-accent text-primary font-poppins text-lg md:text-xl rounded-lg py-2 px-4 capitalize font-medium">Early Access</button>
     </nav>
   )
 }

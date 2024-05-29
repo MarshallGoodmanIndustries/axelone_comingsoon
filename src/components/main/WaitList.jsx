@@ -14,8 +14,8 @@ const [revealModal, setRevealModal] = useState(false);
 
 // form data states
 const [formData, setFormData] = useState({
-  firstname: "",
-  lastname: "",
+  // firstname: "",
+  // lastname: "",
   email: "",
   username: "",
   password: "",
@@ -24,8 +24,8 @@ const [formData, setFormData] = useState({
 
 // form error states
 const [errors, setErrors] = useState({
-  firstname: "",
-  lastname: "",
+  // firstname: "",
+  // lastname: "",
   email: "",
   username: "",
   password: "",
@@ -58,12 +58,12 @@ const checkEmail = email =>{
 const validateForm = ()=>{
   const newErrors = {}
   
-  if (formData.firstname.trim() === '') {
-    newErrors.firstname = 'First Name is required!'
-  }
-  if (formData.lastname.trim() === '') {
-    newErrors.lastname = 'Last Name is required!'
-  }
+  // if (formData.firstname.trim() === '') {
+  //   newErrors.firstname = 'First Name is required!'
+  // }
+  // if (formData.lastname.trim() === '') {
+  //   newErrors.lastname = 'Last Name is required!'
+  // }
   if (formData.username.trim() === '') {
     newErrors.username = 'Username is required!'
   }
@@ -121,8 +121,8 @@ const handleFormSubmission = async (e) =>{
       setRevealModal(true);
       // Clear form data after successful submission
       setFormData({
-        firstname: "",
-        lastname: "",
+        // firstname: "",
+        // lastname: "",
         email: "",
         username: "",
         password: "",
@@ -149,21 +149,21 @@ const handleRevealModal = ()=> {
         {/* form */}
         <form onSubmit={handleFormSubmission} method="post" className="w-full sm:max-w-[30rem] flex flex-col items-center gap-4">
           <h3 className="text-black font-poppins text-lg font-medium capitalize self-start sm:self-center md:self-start">Get Started for free</h3>
-          <div className='w-full'>
+          {/* <div className='w-full'>
             <input onChange={handleChange} value={formData.firstname} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="firstname" placeholder="First Name"  />
             {errors.firstname && <p className="text-red-500 text-sm mt-2">{errors.firstname}</p>}
           </div>
           <div className='w-full'>
             <input onChange={handleChange} value={formData.lastname} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="lastname" placeholder="Last name"  />
             {errors.lastname && <p className="text-red-500 text-sm mt-2">{errors.lastname}</p>}
+          </div> */}
+          <div className='w-full'>
+            <input onChange={handleChange} value={formData.username} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="username" placeholder="Username"  />
+            {errors.username && <p className="text-red-500 text-sm mt-2">{errors.username}</p>}
           </div>
           <div className='w-full'>
             <input onChange={handleChange} value={formData.email} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="email" name="email" placeholder="Email address"  />
             {errors.email && <p className="text-red-500 text-sm mt-2">{errors.email}</p>}
-          </div>
-          <div className='w-full'>
-            <input onChange={handleChange} value={formData.username} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="username" placeholder="Username"  />
-            {errors.username && <p className="text-red-500 text-sm mt-2">{errors.username}</p>}
           </div>
           <div className='w-full'>
             <input onChange={handleChange} value={formData.password} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="password" name="password" placeholder="Password"  />
