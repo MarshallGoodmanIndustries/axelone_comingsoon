@@ -17,7 +17,7 @@ function WhatWeOffer() {
 
 
   return (
-    <section className="bg-secondary flex flex-col gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
+    <section id="whatweoffer" className="bg-secondary flex flex-col gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
         <div className="md:w-fit md:mx-auto">
             <h2 className="text-black font-poppins text-2xl md:text-3xl  font-semibold uppercase">What We Offer</h2>
             <hr className="w-20 md:w-24 h-[2px] md:mx-auto md:mt-1 bg-orange-500 rounded-lg" />
