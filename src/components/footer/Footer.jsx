@@ -65,7 +65,7 @@ const Footer = () => {
             <input className="p-2 rounded-[0.625rem] border border-solid border-white outline-none placeholder:text-sm text-sm" placeholder="johndoe@mail.com" type="email" name="email" id="email" />
             <button 
               type="button"
-              className="bg-accent text-primary font-poppins md:text-lg rounded-lg py-1 px-4 capitalize font-light transition-all duration-300" 
+              className="bg-accent text-primary font-poppins md:text-lg rounded-lg py-2 px-4 capitalize font-light transition-all duration-300" 
             >
               Subscribe
             </button>
