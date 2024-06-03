@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 
 function Header() {
-  const deadline = new Date("JUN 1, 2024").getTime();
+  const deadline = new Date("JUN 5, 2024").getTime();
   return (
     <header className="min-h-dvh relative bg-secondary">
         <Navbar />
