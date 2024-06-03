@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { landingPageFooterMenu } from "../navigations/Navigations";
 import logo_white from "../../assets/images/fyndah_logo_white.png";
@@ -7,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Footer = () => {
+  
 
   return (
     <footer className="bg-[#0a1128] px-4 sm:px-5 py-16 md:px-6 lg:px-16 font-poppins">

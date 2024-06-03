@@ -1,5 +1,6 @@
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
+import ScrollToTop from "./helpers/ScrollToTop";
 import Main from "./main/Main";
 
 
@@ -7,9 +8,10 @@ import Main from "./main/Main";
 function Landing() {
   return (
     <>
-        <Header />
-        <Main />
-        <Footer />
+      <ScrollToTop />
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }

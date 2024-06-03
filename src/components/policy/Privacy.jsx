@@ -1,6 +1,17 @@
+import { useEffect } from "react";
 import privacy from "./data/privacy";
+import { useLocation } from "react-router-dom";
 
 const Privacy = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+      window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "instant"
+      });
+  }, [location]);
   return (
     <section className="w-full p-6 relative">
         <h1 className="font-poppins font-bold font-lg text-2xl lg:text-3xl sm:text-center text-accent capitalize">Privacy policy</h1>

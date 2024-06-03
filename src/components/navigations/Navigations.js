@@ -4,10 +4,6 @@ const landingPageFooterMenu = [
         anchor:"/"
     },
     {
-        title:"About Us",
-        anchor:"#about"
-    },
-    {
         title:"Terms of service",
         anchor:"/policies/tos"
     },

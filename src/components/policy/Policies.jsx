@@ -1,10 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import SideBar from "./Sidebar";
 
 // img
 import logo from "../../assets/images/fyndah_logo.png";
 
 const Policies = () => {
+   
     
   return (
     <section className="">
