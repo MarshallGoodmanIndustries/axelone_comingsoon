@@ -8,7 +8,7 @@ function SideBar() {
   const {pathname} = useLocation();
 
   return (
-    <nav className="bg-secondary w-full h-[16dvh] lg:h-full flex lg:flex-col lg:max-w-[20dvw] justify-between gap-4 lg:gap-8 p-4">
+    <nav className="bg-secondary w-full h-full flex lg:flex-col lg:max-w-[20dvw] justify-between gap-4 lg:gap-8 px-4 py-6 lg:p-4">
         <menu className="flex lg:flex-col gap-4">
             {sideBarLinks.map(({title,link},index)=>(
                 <li key={index} >
