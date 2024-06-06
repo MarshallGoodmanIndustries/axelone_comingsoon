@@ -39,6 +39,11 @@ const tos = [
         title: "Modification of terms",
         desc: "Fyndah.com reserves the right to modify these Terms of Use at any time. Continued use of the platform constitutes acceptance of the revised terms."
     },
+    {
+        numbering: "i",
+        title: "Contact us",
+        desc: "Should you have any questions about this agreement, you can send us a mail to Redrock Technologies Ltd, road 1 house 18b federal housing estate, Egbu, Owerri, Nigeria. Or call +2347065346076."
+    },
 ];
 
 export default tos;

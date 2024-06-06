@@ -4,7 +4,7 @@ import { landingPageFooterMenu } from "../navigations/Navigations";
 import logo_white from "../../assets/images/fyndah_logo_white.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
+// import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Footer = () => {
@@ -29,16 +29,16 @@ const Footer = () => {
           <h3 className="text-primary text-lg font-semibold">Get In Touch</h3>
           <div className="flex items-center gap-2">
             <div className="text-primary"><FaLocationDot size={16}/></div>
-            <p className="text-base w-full text-primary">Road 1 house 18, federal housing Egbu, Owerri, Imo, Nigeria </p>
+            <p className="text-base w-full text-primary">40 Bank Street, London E14 5AB, United Kingdom.</p>
           </div>
           <div className="flex items-center gap-2">
             <div className="text-primary"><MdEmail size={16}/></div>
-            <p className="text-base w-full text-primary">info@fyndah.com</p>
+            <p className="text-base w-full text-primary">hello@fyndah.com</p>
           </div>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <div className="text-primary"><FaPhoneAlt size={16}/></div>
             <p className="text-base w-full text-primary">+234 813 958 9815</p>
-          </div>
+          </div> */}
         </div>
         
 

@@ -37,7 +37,7 @@ const privacy = [
     {
         numbering: "h",
         title: "Contact us",
-        desc: "For any questions regarding this policy, please contact us at hello@fyndah.com."
+        desc: "Should you have any questions about this agreement, you can send us a mail to Redrock Technologies Ltd, road 1 house 18b federal housing estate, Egbu, Owerri, Nigeria. Or call +2347065346076."
     },
 ];
 

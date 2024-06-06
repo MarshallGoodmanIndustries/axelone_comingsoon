@@ -22,7 +22,7 @@ const refund = [
     {
         numbering: "e",
         title: "Contact for refund issues",
-        desc: "For any issues related to refunds, please contact our support team at hello@fyndah.com."
+        desc: "Should you have any questions related to refunds, you can send us a mail to Redrock Technologies Ltd, road 1 house 18b federal housing estate, Egbu, Owerri, Nigeria. Or call +2347065346076."
     },
 ];
 
