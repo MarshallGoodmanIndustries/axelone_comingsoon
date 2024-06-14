@@ -8,8 +8,7 @@ function Introduction() {
                 <h2 className="text-black font-poppins text-2xl md:text-3xl font-semibold uppercase">Introducing FYNDAH</h2>
                 <hr className="w-20 md:w-24 h-[2px] bg-orange-500 rounded-lg" />
             </div>
-            <p className="text-black text-opacity-70 font-roboto text-xl md:text-2xl">Fyndah is more than just a business directory. We&#39;re launching a digital office for businesses like yours, providing you
-                with everything you need to grow and manage your business effectively.
+            <p className="text-black text-opacity-70 font-roboto text-xl md:text-2xl">Welcome to the official launch of Fyndah Beyond being a traditional business directory, Fyndah emerges as a comprehensive digital hub tailored for businesses seeking growth and efficiency. Our platform is now live, offering you a suite of tools and resources designed to enhance your business operations and success.
             </p>
         </div>
         <div className="rounded-lg overflow-hidden group">

@@ -1,7 +1,6 @@
 import About from "./About";
 import Faq from "./Faq";
 import Introduction from "./Introduction";
-import WaitList from "./WaitList";
 import WhatWeOffer from "./WhatWeOffer";
 import WhyChooseUs from "./WhyChooseUs";
 
@@ -12,7 +11,6 @@ function main() {
       <Introduction />
       <WhatWeOffer />
       <WhyChooseUs />
-      <WaitList />
       <About />
       <Faq />
     </main>
