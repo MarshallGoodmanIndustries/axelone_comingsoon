@@ -25,7 +25,7 @@ function WhyChooseUs() {
 
     ];
   return (
-    <section className="bg-primary flex flex-col items-center md:items-start gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
+    <section className="bg-secondary flex flex-col items-center md:items-start gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
         <div className="w-fit mx-auto">
             <h2 className="text-black font-poppins text-2xl md:text-3xl font-bold uppercase">Why Choose Us?</h2>
             <hr className="w-20 md:w-24 h-[2px] md:mx-auto md:mt-1 bg-orange-500 rounded-lg" />

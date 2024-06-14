@@ -25,7 +25,7 @@ function About() {
     // },
 ];
   return (
-    <section id="about" className="bg-secondary flex flex-col py-24 px-4 sm:px-5 md:px-6 lg:px-16">
+    <section id="about" className="bg-primary flex flex-col py-24 px-4 sm:px-5 md:px-6 lg:px-16">
          <div className="md:w-fit md:mx-auto mb-16">
             <h2 className="text-black font-poppins text-2xl md:text-3xl  font-semibold uppercase">About Us</h2>
             <hr className="w-20 md:w-24 h-[2px] md:mx-auto md:mt-1 bg-orange-500 rounded-lg" />

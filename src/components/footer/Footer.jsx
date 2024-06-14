@@ -11,7 +11,7 @@ const Footer = () => {
   
 
   return (
-    <footer className="bg-[#0a1128] px-4 sm:px-5 py-16 md:px-6 lg:px-16 font-poppins">
+    <footer className="bg-[#0a1128] px-4 sm:px-5 py-16  md:px-6 lg:px-16 font-poppins">
       <div className="flex flex-wrap gap-12">
         {/* brand group */}
         <div className="flex-1 md:flex-[1.5]">
