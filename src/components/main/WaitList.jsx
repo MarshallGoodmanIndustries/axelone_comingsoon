@@ -14,16 +14,16 @@ const [revealModal, setRevealModal] = useState(false);
 
 // form data states
 const [formData, setFormData] = useState({
-  full_name: "",
-  phone: "",
+  name: "",
+  phoneNumber: "",
   email: "",
   city: "",
 })
 
 // form error states
 const [errors, setErrors] = useState({
-  full_name: "",
-  phone: "",
+  name: "",
+  phoneNumber: "",
   email: "",
   city: "",
 });
@@ -54,12 +54,12 @@ const checkEmail = email =>{
 const validateForm = ()=>{
   const newErrors = {}
   
-  if (formData.full_name.trim() === '') {
-    newErrors.full_name = 'Full Name is required!'
+  if (formData.name.trim() === '') {
+    newErrors.name = 'Full Name is required!'
   }
  
-  if (formData.phone.trim() === '') {
-    newErrors.phone = 'Phone number is required!'
+  if (formData.phoneNumber.trim() === '') {
+    newErrors.phoneNumber = 'Phone number is required!'
   }
   if (formData.city.trim() === '') {
     newErrors.city = 'City is required!'
@@ -99,7 +99,7 @@ const handleFormSubmission = async (e) =>{
 
 
   if(validateForm()){
-    const endpoint = 'https://api.fyndah.com/api/v1/auth/users';
+    const endpoint = 'https://mg-axeone-email-api.onrender.com/api/v1/send-email';
     setIsLoading(true);
     const result = await handleRegistration(endpoint, formData);
 
@@ -111,8 +111,8 @@ const handleFormSubmission = async (e) =>{
       setRevealModal(true);
       // Clear form data after successful submission
       setFormData({
-        full_name: "",
-        phone: "",
+        name: "",
+        phoneNumber: "",
         email: "",
         city: "",
       });
@@ -140,14 +140,14 @@ const handleRevealModal = ()=> {
 
           {/* full name */}
           <div className='w-full'>
-            <input onChange={handleChange} value={formData.full_name} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="full_name" placeholder="Full Name"  />
-            {errors.full_name && <p className="text-red-500 text-sm mt-2">{errors.full_name}</p>}
+            <input onChange={handleChange} value={formData.name} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="name" placeholder="Full Name"  />
+            {errors.name && <p className="text-red-500 text-sm mt-2">{errors.name}</p>}
           </div>
 
           {/* phone number */}
           <div className='w-full'>
-            <input onChange={handleChange} value={formData.phone} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="tel" name="phone" placeholder="phone"  />
-            {errors.phone && <p className="text-red-500 text-sm mt-2">{errors.phone}</p>}
+            <input onChange={handleChange} value={formData.phoneNumber} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="tel" name="phoneNumber" placeholder="phone"  />
+            {errors.phoneNumber && <p className="text-red-500 text-sm mt-2">{errors.phoneNumber}</p>}
           </div>
           
           {/* email */}
@@ -169,8 +169,8 @@ const handleRevealModal = ()=> {
         {revealModal && 
           <Model 
             src={tick} 
-            modalTitle="Early Access Granted" 
-            modalDescription="Thank you for joining our exclusive wait list You've been successfully registered and granted early access to our platform." 
+            modalTitle="Contact successfully sent" 
+            modalDescription="Thank you for reaching out Your details have been received and we'll get back to you soon." 
             btnTitle="Close"
             btnAction={handleRevealModal}
           /> 
