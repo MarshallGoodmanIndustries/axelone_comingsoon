@@ -41,7 +41,7 @@ const Faq = () => {
 
     return (
         // <ScrollSurface>
-            <section className="bg-secondary py-24 px-4 sm:px-5 md:px-6 lg:px-16">
+            <section className="bg-primary py-24 px-4 sm:px-5 md:px-6 lg:px-16">
                 <div className="w-full flex flex-col gap-16 lg:max-w-[80%] lg:mx-auto">
                     <div className="w-fit mx-auto">
                         <h2 className="text-black font-poppins text-2xl md:text-3xl font-semibold">FAQs</h2>

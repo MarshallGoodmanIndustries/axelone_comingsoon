@@ -4,6 +4,7 @@ import Introduction from "./Introduction";
 import WhatWeOffer from "./WhatWeOffer";
 import WhyChooseUs from "./WhyChooseUs";
 import Explore from "./Explore";
+import WaitList from "./WaitList";
 
 
 function main() {
@@ -14,6 +15,7 @@ function main() {
       <Explore />
       <WhyChooseUs />
       <About />
+      <WaitList />
       <Faq />
     </main>
   )
