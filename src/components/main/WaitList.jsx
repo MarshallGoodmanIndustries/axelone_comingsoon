@@ -14,22 +14,18 @@ const [revealModal, setRevealModal] = useState(false);
 
 // form data states
 const [formData, setFormData] = useState({
-  // firstname: "",
-  // lastname: "",
+  name: "",
+  phoneNumber: "",
   email: "",
-  username: "",
-  password: "",
-  password_confirmation: "",
+  city: "",
 })
 
 // form error states
 const [errors, setErrors] = useState({
-  // firstname: "",
-  // lastname: "",
+  name: "",
+  phoneNumber: "",
   email: "",
-  username: "",
-  password: "",
-  password_confirmation: "",
+  city: "",
 });
 
 // function for handling change in input state
@@ -58,21 +54,15 @@ const checkEmail = email =>{
 const validateForm = ()=>{
   const newErrors = {}
   
-  // if (formData.firstname.trim() === '') {
-  //   newErrors.firstname = 'First Name is required!'
-  // }
-  // if (formData.lastname.trim() === '') {
-  //   newErrors.lastname = 'Last Name is required!'
-  // }
-  if (formData.username.trim() === '') {
-    newErrors.username = 'Username is required!'
+  if (formData.name.trim() === '') {
+    newErrors.name = 'Full Name is required!'
   }
-  if (formData.password.trim() === '') {
-    newErrors.password = 'Password is required';
-  }else{
-    if(formData.password !== formData.password_confirmation){
-      newErrors.cpassword = 'Password does not match';
-    }
+ 
+  if (formData.phoneNumber.trim() === '') {
+    newErrors.phoneNumber = 'Phone number is required!'
+  }
+  if (formData.city.trim() === '') {
+    newErrors.city = 'City is required!'
   }
   
   if (formData.email.trim() === '') {
@@ -109,7 +99,7 @@ const handleFormSubmission = async (e) =>{
 
 
   if(validateForm()){
-    const endpoint = 'https://api.fyndah.com/api/v1/auth/users';
+    const endpoint = 'https://mg-axeone-email-api.onrender.com/api/v1/send-email';
     setIsLoading(true);
     const result = await handleRegistration(endpoint, formData);
 
@@ -121,12 +111,10 @@ const handleFormSubmission = async (e) =>{
       setRevealModal(true);
       // Clear form data after successful submission
       setFormData({
-        // firstname: "",
-        // lastname: "",
+        name: "",
+        phoneNumber: "",
         email: "",
-        username: "",
-        password: "",
-        password_confirmation: "",
+        city: "",
       });
     }
   }
@@ -139,8 +127,8 @@ const handleRevealModal = ()=> {
   return (
     <section id="waitlist" className="bg-secondary flex flex-col sm:items-center md:flex-row md:items-start md:justify-evenly gap-16 py-24 px-4 sm:px-5 md:px-6 lg:px-16">
         <div className="md:max-w-[30%] flex flex-col gap-2 ">
-          <h2 className="text-black font-poppins text-2xl md:text-3xl font-semibold uppercase">Exclusive early access offer</h2>
-          <p className="text-black text-opacity-70 font-roboto text-lg font-normal ">Join our waitlist now and receive 5 free leads</p>
+          <h2 className="text-black font-poppins text-2xl md:text-3xl font-semibold uppercase">We&#39;d Love to Hear From You</h2>
+          <p className="text-black text-opacity-70 font-roboto text-lg font-normal ">Complete Your Details to Stay Connected</p>
           <div className='w-full max-w-[14rem] mt-4 sm:self-center md:self-start'>
             <img src={wailist_img} alt="waitlist illustration" className='w-full h-full object-cover' />
           </div>
@@ -148,31 +136,32 @@ const handleRevealModal = ()=> {
 
         {/* form */}
         <form onSubmit={handleFormSubmission} method="post" className="w-full sm:max-w-[30rem] flex flex-col items-center gap-4">
-          <h3 className="text-black font-poppins text-lg font-medium capitalize self-start sm:self-center md:self-start">Get Started for free</h3>
-          {/* <div className='w-full'>
-            <input onChange={handleChange} value={formData.firstname} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="firstname" placeholder="First Name"  />
-            {errors.firstname && <p className="text-red-500 text-sm mt-2">{errors.firstname}</p>}
-          </div>
+          <h3 className="text-black font-poppins text-lg font-medium capitalize self-start sm:self-center md:self-start">Start Connecting Now</h3>
+
+          {/* full name */}
           <div className='w-full'>
-            <input onChange={handleChange} value={formData.lastname} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="lastname" placeholder="Last name"  />
-            {errors.lastname && <p className="text-red-500 text-sm mt-2">{errors.lastname}</p>}
-          </div> */}
-          <div className='w-full'>
-            <input onChange={handleChange} value={formData.username} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="username" placeholder="Username"  />
-            {errors.username && <p className="text-red-500 text-sm mt-2">{errors.username}</p>}
+            <input onChange={handleChange} value={formData.name} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="name" placeholder="Full Name"  />
+            {errors.name && <p className="text-red-500 text-sm mt-2">{errors.name}</p>}
           </div>
+
+          {/* phone number */}
+          <div className='w-full'>
+            <input onChange={handleChange} value={formData.phoneNumber} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="tel" name="phoneNumber" placeholder="phone"  />
+            {errors.phoneNumber && <p className="text-red-500 text-sm mt-2">{errors.phoneNumber}</p>}
+          </div>
+          
+          {/* email */}
           <div className='w-full'>
             <input onChange={handleChange} value={formData.email} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="email" name="email" placeholder="Email address"  />
             {errors.email && <p className="text-red-500 text-sm mt-2">{errors.email}</p>}
           </div>
+
+          {/* city */}
           <div className='w-full'>
-            <input onChange={handleChange} value={formData.password} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="password" name="password" placeholder="Password"  />
-            {errors.password && <p className="text-red-500 text-sm mt-2">{errors.password}</p>}
+            <input onChange={handleChange} value={formData.city} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="text" name="city" placeholder="city"  />
+            {errors.city && <p className="text-red-500 text-sm mt-2">{errors.city}</p>}
           </div>
-          <div className='w-full'>
-            <input onChange={handleChange} value={formData.password_confirmation} className="bg-primary border border-black border-opacity-60 border-solid rounded-lg px-2 py-3 w-full outline-none text-black text-opacity-80" type="password" name="password_confirmation" placeholder="Confirm password"  />
-            {errors.password_confirmation && <p className="text-red-500 text-sm mt-2">{errors.password_confirmation}</p>}
-          </div>
+         
           <button type="submit" name="newsletter_btn" className="w-full flex justify-center items-center bg-accent hover:bg-accentDark transition-all duration-300 text-primary font-poppins font-medium text-base sm:text-lg md:text-xl rounded-lg py-3 px-4">
             {isLoading ? <ImSpinner9 className="animate-spin text-center" size={22} /> : "Join"}
           </button>
@@ -180,8 +169,8 @@ const handleRevealModal = ()=> {
         {revealModal && 
           <Model 
             src={tick} 
-            modalTitle="Early Access Granted" 
-            modalDescription="Thank you for joining our exclusive wait list You've been successfully registered and granted early access to our platform." 
+            modalTitle="Contact successfully sent" 
+            modalDescription="Thank you for reaching out Your details have been received and we'll get back to you soon." 
             btnTitle="Close"
             btnAction={handleRevealModal}
           /> 
